@@ -8,6 +8,11 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+
+# Day 2: Web Development Bootcamp
+
+**Welcome to Day 2 of the Web Development Bootcamp organized by LiveWires!**
+
 # Create a New Vite React Project
 
 ## Step 1: Create a New Vite Project
@@ -72,21 +77,19 @@ Currently, two official plugins are available:
      ➜  Network: use --host to expose
      ```
 
-   - Open your browser and navigate to `http://localhost:3000` to see your new React app running.
+   - Open your browser and navigate to `http://localhost:3000` to see your new React app running
 
-## Example Commands Summary
 
-```sh
-# Step 1: Create a new Vite project
-npm create vite@latest
 
-# Follow the prompts to choose project name, framework (React), and variant (JavaScript or TypeScript)
+Today, we delved into the following topics:
 
-# Step 3: Navigate into the project directory
-cd my-vite-react-app
+- **Introduction to React**: We started with the basics of React and why it's a powerful tool for building web applications.
+- **React App File Structure**: We explored the standard file structure of a React application to understand where different types of files and code should be placed.
+- **Creating and Importing Components**: We learned how to create React components and import them into other parts of the application to build reusable pieces of UI.
+- **Understanding Props**: We discussed how to use props to pass data to components, allowing us to dynamically change the content of our components.
+- **Conditional Rendering**: We covered how to conditionally render components and apply conditional CSS styles based on certain conditions.
+- **Rendering Lists**: We learned how to render lists of items or objects efficiently in React.
+- **Introduction to React Hooks (useState)**: Finally, we learned about the `useState` hook and built a simple counter app to practice managing state in a React component.
 
-# Install dependencies
-npm install
 
-# Run the development server
-npm run dev
+
