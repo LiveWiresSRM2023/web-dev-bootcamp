@@ -29,7 +29,7 @@ Below is a preview of the UI we created for our ToDo list application.
 
 To give you a better understanding of how our app is organized, here is the structure of the ToDo list app. This diagram illustrates the components and their relationships within the app.
 
-![Structure of the ToDo List App]()
+![Structure of the ToDo List App](https://github.com/LiveWiresSRM2023/web-dev-bootcamp/blob/main/day-3/src/assets/UI%20todo%20list%20structure.png)
 
 
 We hope you enjoyed today's session and found it informative.
