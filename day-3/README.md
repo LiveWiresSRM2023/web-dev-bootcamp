@@ -23,7 +23,7 @@ Today, we focused on two main objectives:
 
 Below is a preview of the UI we created for our ToDo list application.
 
-![UI for the ToDo List App](../day-3-bootcamp/src/assets/UI%20Todo%20list.png)
+![UI for the ToDo List App](https://github.com/LiveWiresSRM2023/web-dev-bootcamp/blob/main/day-3/src/assets/UI%20todo%20list%20structure.png)
 
 ### Structure of the ToDo List App
 
