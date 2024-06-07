@@ -11,9 +11,9 @@ Currently, two official plugins are available:
 # Day 5 Summary - Web Development Bootcamp by Livewires
 
 ## Today's Focus:
-- **Integrating firebase to our application**
-  - **Configured Firebase into our Project**
-  - **Enabled Google Authentication**
+- **Integrating firebase to our application.**
+  - **Configured Firebase into our Project.**
+  - **Enabled Google Authentication.**
 
 
 ### Firebase:
