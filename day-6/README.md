@@ -8,54 +8,62 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-# Day 4 Summary - Web Development Bootcamp by Livewires
+# Web Development Bootcamp - Day 6
 
-## Today's Focus:
-- **Building the UI of the To-Do List App**
-  - **Created the Authentication Page**
-  - **Navigation Using react-router-dom**
+## Topics Covered
 
-
-### React Router DOM:
-- **Installation:**
-  - Installed `react-router-dom` using npm or yarn.
-    ```bash
-    npm install react-router-dom
-    # or
-    yarn add react-router-dom
-    ```
-- **Setting Up Routes:**
-  - Configured the router in your main App component.
+### 1. Event Handlers in React
+- **onChange Event Handler**:
+  - Used to handle changes in form inputs.
+  - Example:
     ```jsx
-    import './App.css'
-    import Content from './components/Content'
-    import Signin from './components/Signin'
-    import { BrowserRouter,Routes,Route } from 'react-router-dom'
-
-
-
-    function App() {
-
-    return (
-        <BrowserRouter>
-        <Routes>
-            <Route path='/' Component={Signin}> </Route>
-            <Route path='/home' Component={Content}></Route>
-            </Routes>
-        </BrowserRouter>
-    )
-    }
-
-    export default App
+    <input type="text" placeholder='Enter the task here' value={Newtask} onChange={Inputchange} />
     ```
-- **Navigation Between Pages:**
-  - Used `<Link>` and `<NavLink>` components to navigate between different routes.
+
+- **onClick Event Handler**:
+  - Used to handle button clicks and other clickable elements.
+  - Example:
     ```jsx
-      <Link to="/home">
-        <button>
-            <img src= {google} alt="" className='google' />
-            Continue with Google
-        </button>
-      </Link>
+     <button onClick={Onsubmit}>Add</button>
     ```
 
+### 2. Firestore Database Structure
+- **Firestore**:
+  - A NoSQL database by Firebase.
+  - Documents and Collections are used to store data.
+  - Collections contain multiple documents, each identified by a unique ID.
+
+### 3. useEffect Hook
+- **useEffect**:
+  - A hook that allows you to perform side effects in functional components.
+  - Example:
+    ```jsx
+    import { useEffect } from 'react';
+
+    useEffect(() => {
+      // Code to run on component mount
+    }, []);
+    ```
+
+### 4. Retrieving Documents from Firestore
+- **getDocs Module**:
+  - Used to retrieve documents from a collection.
+  - Example to get documents from the "taskscollection":
+    ```javascript
+    import { getDocs, collection } from "firebase/firestore";
+    import { db } from "./firebase-config"; // Make sure to import your firestore config
+
+    useEffect(() =>{
+     const gettasks = async() => {
+       const data = await getDocs(taskref)
+       const filtereddata = data.docs.map(doc => ({...doc.data(),id:doc.id}))
+       setTasks(filtereddata)
+     }
+
+     gettasks()
+});
+    };
+    ```
+
+## Summary
+Today, we delved into essential React event handlers (`onChange` and `onClick`), explored the structure of the Firestore database, and learned how to use the `useEffect` hook for side effects. We also practiced retrieving documents from a Firestore collection using the `getDocs` module.
